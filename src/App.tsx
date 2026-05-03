@@ -39,7 +39,7 @@ export default function Home() {
           className="absolute inset-0 z-0"
         >
           <img 
-            src=src={`${import.meta.env.BASE_URL}images/hero-architecture.png`} 
+            src={`${import.meta.env.BASE_URL}images/hero-architecture.png`} 
             alt="Classical Architecture" 
             className="w-full h-full object-cover opacity-40 mix-blend-luminosity"
           />
