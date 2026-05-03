@@ -39,7 +39,7 @@ export default function Home() {
           className="absolute inset-0 z-0"
         >
           <img 
-            src="/images/hero-architecture.png" 
+            src=src={`${import.meta.env.BASE_URL}images/hero-architecture.png`} 
             alt="Classical Architecture" 
             className="w-full h-full object-cover opacity-40 mix-blend-luminosity"
           />
@@ -65,7 +65,7 @@ export default function Home() {
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-32 md:py-48 px-8 md:px-24 relative" style={{ backgroundImage: "url('/images/texture-cream.png')", backgroundBlendMode: 'multiply' }}>
+      <section className="py-32 md:py-48 px-8 md:px-24 relative" style={{ backgroundImage: `url('${import.meta.env.BASE_URL}images/texture-cream.png')`, backgroundBlendMode: 'multiply' }}>
         <div className="max-w-3xl mx-auto text-center">
           <FadeIn>
             <h2 className="text-primary text-sm tracking-[0.3em] uppercase mb-8">Our Philosophy</h2>
@@ -86,17 +86,18 @@ export default function Home() {
             {
               title: "Technology & Digital Infrastructure",
               desc: "Strategic investments in transformative technology platforms, digital infrastructure, and next-generation systems that define the modern economy.",
-              img: "/images/tech-datacenter.png"
+              img: `${import.meta.env.BASE_URL}images/tech-datacenter.png`
             },
             {
               title: "Real Assets",
               desc: "Acquisition and stewardship of generational properties in prime global jurisdictions. Value preservation through physical permanence.",
-              img: "/images/natural-resources.png"
+              img: `${import.meta.env.BASE_URL}images/natural-resources.png`
+img: `${import.meta.env
             },
             {
               title: "Infrastructure",
               desc: "Foundational investments in the systems that power modern civilization. Long-duration, inflation-linked yield.",
-              img: "/images/infrastructure.png"
+              img: `${import.meta.env.BASE_URL}images/infrastructure.png`
             }
           ].map((sector, i) => (
             <FadeIn key={i} delay={i * 0.2} className="group cursor-pointer">
@@ -120,7 +121,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-32 items-center">
           <FadeIn>
             <div className="aspect-square bg-muted relative p-8 flex items-center justify-center border border-primary/20">
-              <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "url('/images/texture-cream.png')" }} />
+              <div className="absolute inset-0 opacity-10" style={{ backgroundImage: `url('${import.meta.env.BASE_URL}images/texture-cream.png')` }} />
               <div className="text-center z-10">
                 <div className="text-7xl font-serif text-primary mb-4">1842</div>
                 <div className="text-xs tracking-[0.2em] uppercase text-foreground/60">Foundation</div>
